@@ -7,10 +7,8 @@ import os
 import datetime
 
 todaydate = datetime.datetime.now()
-
 file = "test1.pdf"
 pdf_file = fitz.open(file)
-
 imagetextfile = open(f'{file}.csv', 'w')
 
 for page_index in range(len(pdf_file)):
